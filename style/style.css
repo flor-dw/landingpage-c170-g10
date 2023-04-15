@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;  
+}
+header{
+    width: 100%;
+    background: #E81D66;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+#btnmenu{
+    display: none;
+    /* justify-content: flex-end; */
+}
+/* ------------------logoprincipal---- */
+
+
+.logopaginaprincipal ul{
+    background-color: #E81D66;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+/* .logopaginaprincipal li{
+    border-right: 1px solid rgb(0, 0, 0);
+} */
+
+.logopaginaprincipal li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border:solid 2px white;
+    border-radius: 25px;
+    font-size: 12px;
+}
+/* ----------------------------------------------------------- */
+header label{
+    display: none;
+    width: 22px;
+    height: 52px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #E81D66;
+}
+
+
+header label:hover{
+    cursor: pointer;
+    background:  #fc518f;
+}
+
+/* --------------------------------navegadorr-------- */
+
+.menu ul{
+    background-color: #E81D66;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+/* .menu li{
+    border-right: 1px solid rgb(3, 3, 3);
+} */
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* -----------------buscador------------- */
+
+
+#btnsearch{
+    display: block;
+}
+
+
+
+.search form{
+    background-color: #051130;
+    margin: 2px;
+    list-style: none;
+    padding: 1px 1px;
+    display: flex;
+    border:solid #051130;
+    border-radius: 25px;
+}
+
+/* .search{
+    border-right: 1px solid rgb(3, 3, 3);
+} */
+
+.search input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    display: flex;
+    outline: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.search a img{
+    width: 18px;
+    height: 18px;
+}
+
+/* -------------iconos de la pagina---------- */
+
+.iconosusarios ul{
+    background-color: #E81D66;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+
+.iconosusarios li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------web movil----- */
+@media (max-width: 768px){
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position:absolute;
+        width: 40%;
+        margin-left: -70%;
+        bottom: 158px;
+    }
+
+    .menu ul{
+        flex-direction:column; 
+    }
+
+    #btnmenu:checked ~ .menu {
+        margin: 0;
+    }
+}
+
+/* ----main--- seccion central*/
+
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color:#ffffff;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+
+.sectort{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+
+}
+
+.sectortitulo{
+    background-color:#051130;
+    width: 25%;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+/* --------------------slader-promociones----- */
+
+
+.promociones{
+    padding: 15px;
+    background: #E81D66;
+    height: 450px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* marco imagen */
+.contenedorslider{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    /* caja sombreado */
+    box-shadow: 0 0 0 20px #ca024ca2,0 10px 30px;
+    position: relative;
+    border:solid 2px #ca024b3a;
+}
+
+
+.slider{
+    display: flex;
+    height: 400px;
+    width: 400%;
+    margin-left: -100%;
+}
+
+
+.slider__section{
+    width: 100%;
+}  
+
+.slider i{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* botones deslizar imagenes */
+.sliderboton{
+    position: absolute;
+    width: 29px;
+    height: 44px;
+    background: white;
+    top:50%;
+    transform:translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    /* bordes */
+    border-radius: 30%;
+    cursor: pointer;
+    box-shadow: 0 0 0 10px #E81D66,0 5px 20px;
+}
+
+.sliderboton:hover{
+/* --- */
+}
+
+.sliderleft{
+    left: 0px;
+
+}
+
+.sliderright{
+    right: 0px;
+}
+/* ---------------------------------------------- */
+
+
+/* --------------------slader-descuento del mes----- */
+
+/* marco imagen */
+.contenedorslider2{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    /* caja sombreado */
+    box-shadow: 0 0 0 10px #051130,0 5px 20px;
+    position: relative;
+}
+
+
+.slider2{
+    display: flex;
+    height: 400px;
+    width: 400%;
+    margin-left: -100%;
+}
+
+.slider__section2{
+    width: 100%;
+}  
+
+.slider2 img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* botones deslizar imagenes */
+.sliderboton2{
+    position: absolute;
+    width: 29px;
+    height: 44px;
+    background: white;
+    top:50%;
+    transform:translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    /* bordes */
+    border-radius: 30%;
+    cursor: pointer;
+    box-shadow: 0 0 0 10px #051130,0 5px 20px;
+}
+
+.sliderboton2:hover{
+/* --- */
+}
+
+.sliderleft2{
+    left: 0px;
+
+}
+
+.sliderright2{
+    right: 0px;
+}
+
+
+/* ----------------------------seccion catalogo---------------- */
+
+
+
+.contenedorcatalogo{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+}
+.card{
+    background-color:white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0 0 0 10px #fffafa,0 5px 20px;
+}
+.card:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+p{
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* -------contactanos---------- */
+
+.sectorcontact{
+    padding: 4px;
+    background-color:#051130;
+}
+
+.sectorcontactos{
+    background-color:#051130;
+    width: 25%;
+    color: white;
+    text-align: center;
+}
+
+
+/* --formularios....-.-..- */
+
+
+.contenedorformulario{
+    width: 100%;
+    height: 100%;
+    background-color: #E81D66;
+    display: flex;
+    justify-content: center;
+}
+.cajita{
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formularios{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+}
+.formularios i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ffffff;
+}
+.formularios input{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #051130;
+    border-radius: 40px;
+    color: #ffffff;
+}
+.formularios input::placeholder{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.cajamensaje{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.cajamensaje i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.cajamensaje textarea{
+    background-color: #051130;
+    border-radius: 40px;
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+.cajamensaje textarea::placeholder{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.boton input{
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #051130;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.mensajes{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.mensajes .exitoso{
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+    background-color: green;
+    border-radius: 10px;
+}
+.mensajes .fallido{
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+    background-color: red;
+    border-radius: 10px;
+}
+@keyframes boton{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* 
+----margen final---- */
+
+.copyright{
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #051130;
+}
+
+.copyright p{
+    background: #051130;
+    display: flex;
+    justify-content: center;
+    color: white;
+}

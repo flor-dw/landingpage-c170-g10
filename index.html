@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!-- .-------------logo principal---------- -->
+                <input type="checkbox" id="btnmenu" class="btnmenu">
+                    <label for="btnmenu" ><img src="img/🦆 icon _user key bold_.png" alt=""></label>
+                <div class="logopaginaprincipal">
+                        <ul>
+                            <li><a href=""><h2>El Bazar de Pepe Argento</h2></a></li>
+                        </ul>
+                </div> 
+        <!-- ---------------------nav a ---------------           -->
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Productos</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Pregunstas Frecuentes</a></li>
+                        <li><a href="">Politica de Devolucion</a></li>
+                    </ul>
+                </div>
+        <!-- ----------  buscador------------ -->
+                <div class="search">
+                    <form action="">
+                        <input type="text" name="search" placeholder="Buscar...">
+                        <a href=""><img for="btnsearch" src="img/🦆 icon _magnifying glass bold_.svg"></a>
+                        </input>
+                    </form>
+                </div>
+        <!-- 
+        ---------------------------iconos acessos usuario----------- -->
+                <div class="iconosusarios">
+                    <ul>
+                        <li><a href=""><img for="btnsearch" src="img/🦆 icon _user key bold_.svg"></a></li>
+                        <li><a href=""><img for="btnsearch" src="img/🦆 icon _shop cart bold_.svg"></a></li>
+                        <li><a href="">$0,00</a></li>
+                    </ul>
+                </div>
+            </header>
+<main>
+    <!-- banner de promociones -->
+<div class="promociones">
+    <div class="contenedorslider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="https://www.delbazar.com/wp-content/uploads/2023/03/10-off-con-transferencia-1024x475.jpg" alt="" class="sliderimg">
+            </div>
+            <div class="slider__section">
+                <img src="https://www.delbazar.com/wp-content/uploads/2023/03/envio-a-todo-el-pais-3-cuotas-sin-interes-1024x475.jpg" alt="" class="sliderimg">
+            </div>
+            <div class="slider__section">
+                <img src="https://www.delbazar.com/wp-content/uploads/2023/03/decora-tu-casa.jpg" alt="" class="sliderimg">
+            </div>
+            <div class="slider__section">
+                <img src="https://www.delbazar.com/wp-content/uploads/2023/03/elegi-vajilla.jpg" alt="" class="sliderimg">
+            </div>
+        </div>      
+        <div class="sliderboton sliderright" id="btn-right"><img src="img/Arrow---Right-Square2.svg" alt=""></div>
+        <div class="sliderboton sliderleft" id="btn-left"><img src="img/Arrow---Left-Square2.svg" alt=""></div>
+    </div>
+    <script src="js/script.js"></script>
+</div>
+    <!-- --------------------- -->
+<!-- descuentos del mess -->
+    <div class="sectort">
+        <h2 class="sectortitulo">Ofertas del Mes</h2>
+    </div>
+    <div class="contenedorslider2">
+        <div class="slider2" id="slider2">
+            <div class="slider__section2">
+                <img src="img/ofertas1.png" alt="" class="sliderimg2">
+            </div>
+            <div class="slider__section2">
+                <img src="img/ofertas2.png" alt="" class="sliderimg2">
+            </div>
+            <div class="slider__section2">
+                <img src="img/ofertas3.png" alt="" class="sliderimg2">
+            </div>
+            <div class="slider__section2">
+                <img src="img/ofertas4.png" alt="" class="sliderimg2">
+            </div>
+        </div>      
+        <div class="sliderboton2 sliderright2" id="btn-right2"><img src="img/Arrow---Right-Square.svg" alt=""></div>
+        <div class="sliderboton2 sliderleft2" id="btn-left2"><img src="img/Arrow---Left-Square.svg" alt=""></div>
+    </div>
+    <script src="js/script2.js"></script>
+<!-- ------------------///////////////////////------------------------------------ -->
+
+<div class="sectort">
+    <h2 class="sectortitulo">Novedades</h2>
+</div>
+
+
+<div id="contenedorcatalogo" class="contenedorcatalogo"></div>
+    <script src="js/listacatalogo.js"></script>
+
+<!-- -----------------------contactanos.....----------- -->
+<div class="sectorcontact">
+    <h2 class="sectorcontactos">Contactanos</h2>
+</div>
+
+
+
+<div class="contenedorformulario">
+    <form id="formularioUsuarios" class="cajita">
+        <div class="formularios">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nombre" id="nombre" required>
+        </div>
+        <div class="formularios">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" id="email" required>
+        </div>
+        <div class="cajamensaje">
+            <textarea id="msg" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+        </div>
+        <div class="boton">
+            <input type="submit" value="Enviar" class="btn-enviar"/>
+        </div>
+        <div class="mensajes">
+        <div class="exitoso" id="exitoso">Tu mensaje fue enviado con exito!</div>
+        <!-- falta reglar -->
+        <div class="fallido" id="fallido">Falta completar campos!</div>
+    </div>
+    </form>
+</div>
+
+
+<script src="js/validacion.js"></script>
+</main>
+<!-- ------margen final--- -->
+<footer>
+    <div class="copyright">
+    <p>Todos los derechos reservados por 3z3k31l</p>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>
